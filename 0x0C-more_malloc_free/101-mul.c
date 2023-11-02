@@ -4,10 +4,10 @@
 #include <ctype.h>
 
 /**
- * _is_zero - determines if any number is zero
- * @argv: argument vector.
+ * _is_zero - Determines if any number is zero.
+ * @argv: Argument vector.
  *
- * Return: no return.
+ * Return: No return.
  */
 void _is_zero(char *argv[])
 {
@@ -35,11 +35,11 @@ void _is_zero(char *argv[])
 }
 
 /**
- * _initialize_array - set memery to zero in a new array
- * @ar: char array.
- * @lar: length of the char array.
+ * _initialize_array - Set memory to zero in a new array.
+ * @ar: Char array.
+ * @lar: Length of the char array.
  *
- * Return: pointer of a char array.
+ * Return: Pointer of a char array.
  */
 char *_initialize_array(char *ar, int lar)
 {
@@ -52,12 +52,11 @@ char *_initialize_array(char *ar, int lar)
 }
 
 /**
- * _checknum - determines length of the number
- * and checks if number is in base 10.
- * @argv: arguments vector.
- * @n: row of the array.
+ * _checknum - Determines length of the number and checks if number is in base 10.
+ * @argv: Arguments vector.
+ * @n: Row of the array.
  *
- * Return: length of the number.
+ * Return: Length of the number.
  */
 int _checknum(char *argv[], int n)
 {
@@ -74,10 +73,9 @@ int _checknum(char *argv[], int n)
 }
 
 /**
- * main - Entry point.
- * program that multiplies two positive numbers.
- * @argc: number of arguments.
- * @argv: arguments vector.
+ * main - Entry point. Program that multiplies two positive numbers.
+ * @argc: Number of arguments.
+ * @argv: Arguments vector.
  *
  * Return: 0 - success.
  */
