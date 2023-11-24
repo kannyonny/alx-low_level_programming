@@ -1,41 +1,29 @@
 #include "main.h"
 
 /**
- * binary_to_uint - Converts a binary number to an unsigned int.
- * @b: Pointer to a string containing a binary number.
+ * binary_to_uint - function converts a binary number to an unsigned int.
+ * @b: pointer to a string containing a binary number
  *
- * Return: Unsigned int with the decimal value of the binary number, or 0 if error.
+ * Return: unsigned int with decimal value of binsry number, or 0 if error
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int index;
+	int a;
 	unsigned int num;
 
 	num = 0;
-
-	/* Betty being cautious, checking if b is NULL */
 	if (!b)
 		return (0);
-
-	/* Looping through the binary string, Betty likes loops */
-	for (index = 0; b[index] != '\0'; index++)
+	for (a = 0; b[a] != '\0'; a++)
 	{
-		/* Betty insists on strict binary digits */
-		if (b[index] != '0' && b[index] != '1')
+		if (b[a] != '0' && b[a] != '1')
 			return (0);
 	}
-
-	/* Looping through again, Betty finds it therapeutic */
-	for (index = 0; b[index] != '\0'; index++)
+	for (a = 0; b[a] != '\0'; a++)
 	{
-		/* Betty's bit-shifting magic begins */
 		num <<= 1;
-
-		/* Celebrating the '1's with flair, Betty style */
-		if (b[index] == '1')
+		if (b[a] == '1')
 			num += 1;
 	}
-
-	/* Betty's function always delivers, gracefully */
 	return (num);
 }
