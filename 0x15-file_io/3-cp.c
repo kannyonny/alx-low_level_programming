@@ -2,11 +2,12 @@
 #include <stdio.h>
 
 /**
- * error_file - checks if files can be opened.
- * @file_from: file_from.
- * @file_to: file_to.
- * @argv: arguments vector.
- * Return: no return.
+ * error_file - Checks if files can be opened.
+ * @file_from: File descriptor for file to read from.
+ * @file_to: File descriptor for file to write to.
+ * @argv: Arguments vector.
+ *
+ * Return: No return.
  */
 void error_file(int file_from, int file_to, char *argv[])
 {
@@ -23,9 +24,10 @@ void error_file(int file_from, int file_to, char *argv[])
 }
 
 /**
- * main - check the code for Holberton School students.
- * @argc: number of arguments.
- * @argv: arguments vector.
+ * main - Check the code for Holberton School students.
+ * @argc: Number of arguments.
+ * @argv: Arguments vector.
+ *
  * Return: Always 0.
  */
 int main(int argc, char *argv[])
